@@ -1,24 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap");
-@import "reset.css";
 
-@import "status-bar.css";
+@import "reset.css";
+@import "variables.css";
+/* components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+/* screens */
+@import "screens/login.css";
+@import "screens/friends.css";
 
 body {
-  font-family: "Fira Sans", sans-serif;
+  color: #2e363e;
 }
 
-.welcome-header {
-  display: flex;
-  margin: 90px 0px;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-}
-.welcome-header__title {
-  margin-bottom: 30px;
-  font-size: 25px;
-  font-weight: 700;
-}
-.welcome-header__text {
-  width: 60%;
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
